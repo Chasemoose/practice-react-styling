@@ -30,7 +30,7 @@ const theme = {
 const App = () => {
     return (
         <>
-            <ThemeProvider theme={{theme}}>
+            <ThemeProvider theme={theme}>
                 <Container fluid>
                     <Row>
                         <Col>

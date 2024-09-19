@@ -16,11 +16,23 @@ const theme = {
             color: #004085;
             background-color: #cce5ff;
             border-color: #b8daff;
+
+            &:hover {
+                color: #fff;
+                background-color: #0069d9;
+                border-color: #0062cc;
+            }
         `,
         secondary: css`
             color: #383d41;
             background-color: #e2e3e5;
             border-color: #d6d8db;
+
+            &:hover {
+                color: #fff;
+                background-color: #5a6268;
+                border-color: #545b62;
+            }
         `
 
     },

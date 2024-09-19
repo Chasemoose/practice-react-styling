@@ -8,6 +8,8 @@ import Task03 from './../../03/Task03';
 import Task04 from './../../04/Task04';
 import Task05 from './../../05/Task05';
 
+import StyledGlobal from './styled/Global'
+
 const theme = {
     alert: {
         primary: css`
@@ -70,6 +72,7 @@ const App = () => {
     return (
         <>
             <ThemeProvider theme={theme}>
+                <StyledGlobal />
                 <Container fluid>
                     <Row>
                         <Col>

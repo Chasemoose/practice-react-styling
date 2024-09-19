@@ -23,6 +23,35 @@ const theme = {
             border-color: #d6d8db;
         `
 
+    },
+    Button: {
+        variant: {
+            primary: css`
+                color: #fff;
+                background-color: #007bff;
+                border-color: #007bff;
+            `,
+            secondary: css`
+                color: #fff;
+                background-color: #6c757d;
+                border-color: #6c757d;
+                
+            `
+        },
+        size: {
+            lg: css`
+                padding: 0.5rem 1rem;
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                border-radius: 0.3rem;
+            `,
+            sm: css`
+                padding: 0.25rem 0.5rem;
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+                border-radius: 0.2rem;
+            `
+        }
     }
 }
 

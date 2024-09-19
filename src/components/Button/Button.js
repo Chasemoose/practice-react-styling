@@ -2,9 +2,9 @@ import React from 'react';
 
 import { StyledButton } from './Button.styled';
 
-const Button = props => {
+const Button = ({variant, size = 'lg', children}) => {
     return (
-        <StyledButton variant={props.variant}>{props.children}</StyledButton>
+        <StyledButton variant={variant} size={size}>{children}</StyledButton>
     );
 }
 

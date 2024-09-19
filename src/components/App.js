@@ -8,8 +8,6 @@ import Task03 from './../../03/Task03';
 import Task04 from './../../04/Task04';
 import Task05 from './../../05/Task05';
 
-
-
 const theme = {
     alert: {
         primary: css`

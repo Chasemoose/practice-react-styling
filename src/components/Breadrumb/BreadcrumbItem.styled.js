@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const DefaultStyledBreadCrumbItem = styled.li`
+    color: ${({active}) => active ? '#6c757d' : 'red'};
     & + & {
         padding-left: 0.5rem;
     }

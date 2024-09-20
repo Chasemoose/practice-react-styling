@@ -2,9 +2,9 @@ import React from 'react';
 
 import StyledBreadcrumb from './Breadcrumb.styled';
 
-const Breadcrumb = props => {
+const Breadcrumb = ({variant, children}) => {
     return (
-        <StyledBreadcrumb variant={props.variant}>{props.children}</StyledBreadcrumb>
+        <StyledBreadcrumb variant={variant}>{children}</StyledBreadcrumb>
     );
 }
 

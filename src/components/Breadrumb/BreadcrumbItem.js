@@ -4,7 +4,7 @@ import StyledBreadcrumbItem from './BreadcrumbItem.styled';
 
 const BreadcrumbItem = props => {
     return (
-        <StyledBreadcrumbItem>
+        <StyledBreadcrumbItem active={props.active}>
             {props.href ? <a href={props.href}>{props.children}</a> : props.children }
         </StyledBreadcrumbItem>
     );

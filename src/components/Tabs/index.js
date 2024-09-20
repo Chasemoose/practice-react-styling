@@ -1,6 +1,7 @@
-import React from 'react'
+import Tabs from './Tabs'
+import Tab from './Tab
 
-export const Tabs = () => <ul></ul>
-export const Tab = () => <li>Item</li>
+
+export { Tabs, Tab }
 
     

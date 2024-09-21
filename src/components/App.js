@@ -36,7 +36,7 @@ const theme = {
         `
 
     },
-    Button: {
+    button: {
         variant: {
             primary: css`
                 color: #fff;

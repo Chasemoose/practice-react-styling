@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, {Children, useState} from "react";
 
-import { StyledTabs } from "./Tabs.styled";
+import { StyledTabs, StyledTabsChild, StyledTabsLink } from "./Tabs.styled";
 
 const Tabs = ({ children, defaultActiveKey }) => {
 
@@ -13,11 +13,11 @@ const Tabs = ({ children, defaultActiveKey }) => {
 	return (
 		<>
 			<StyledTabs>
-				{React.Children.map(children, (child) => (
-					<a onClick={() => handleClick(child.props.eventKey)}>{child.props.title}</a>
+				{Children.map(children, (child) => (
+					<StyledTabsLink active={child.props.eventKey === state} onClick={() => handleClick(child.props.eventKey)}>{child.props.title}</StyledTabsLink>
 				))}
 			</StyledTabs>
-				{React.Children.map(children, (child) => <div active={child.props.eventKey === state ? 'y' : 'n'}>{Child}</div>)}
+				{Children.map(children, (child) => <StyledTabsChild active={child.props.eventKey === state}>{child}</StyledTabsChild>)}
 				
 			
 		</>

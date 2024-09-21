@@ -4,7 +4,7 @@ const DefaultStyledButton = styled.button`
     display: inline-block;
     font-weight: 400;    
     color: #212529;
-    text-aling: center;
+    text-align: center;
     vertical-align: middle;
     cursor: pointer;
     -webkit-user-select: none;

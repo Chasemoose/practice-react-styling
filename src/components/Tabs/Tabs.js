@@ -14,7 +14,7 @@ const Tabs = ({ children, defaultActiveKey }) => {
 		<>
 			<StyledTabs>
 				{Children.map(children, (child) => (
-					<StyledTabsLink active={child.props.eventKey === state} onClick={() => handleClick(child.props.eventKey)}>{child.props.title}</StyledTabsLink>
+					<StyledTabsLink active={child.props.eventKey === state} onClick={() => !child.props.disabled && handleClick(child.props.eventKey)} disabled={child.props.disabled}>{child.props.title}</StyledTabsLink>
 				))}
 			</StyledTabs>
 				{Children.map(children, (child) => <StyledTabsChild active={child.props.eventKey === state}>{child}</StyledTabsChild>)}

@@ -8,9 +8,9 @@ const StyledCardBody = styled.div`
     padding: 1.25rem;
 `
 
-const CardBody = ({ Children }) => {
+const CardBody = ({ children }) => {
     return (
-        <StyledCardBody>{Children}</StyledCardBody>
+        <StyledCardBody>{children}</StyledCardBody>
     );
 }
 

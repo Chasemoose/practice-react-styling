@@ -8,9 +8,9 @@ const StyledCardTitle = styled.div`
     line-height: 1.2;
 `
 
-const CardTitle = ({ Children }) => {
+const CardTitle = ({ children }) => {
     return (
-        <StyledCardTitle>{Children}</StyledCardTitle>
+        <StyledCardTitle>{children}</StyledCardTitle>
     );
 }
 

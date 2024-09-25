@@ -13,7 +13,7 @@ const StyledCardImg = styled.img`
 
 const CardImg = ({ src }) => {
     return (
-        <StyledCardImg img src={src} />
+        <StyledCardImg img src={src}/>
     );
 }
 

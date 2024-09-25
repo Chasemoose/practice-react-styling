@@ -6,9 +6,9 @@ const StyledCardText = styled.div`
     margin-bottom: 1rem;
 `
 
-const CardText = ({ Children }) => {
+const CardText = ({ children }) => {
     return (
-        <StyledCardText>{Children}</StyledCardText>
+        <StyledCardText>{children}</StyledCardText>
     );
 }
 
